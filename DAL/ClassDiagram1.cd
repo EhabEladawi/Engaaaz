@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DAL.dentalbleeching" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dentalbleeching.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.dentalprothesis" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAAAAAAAAAUAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>dentalprothesis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.dentalraidiology" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dentalraidiology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.dentalsurgery" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAQAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dentalsurgery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.diagnosis" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAgA=</HashCode>
+      <FileName>diagnosis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.Doctorclinicinformation" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAACACgAAAQAAAAAAAA=</HashCode>
+      <FileName>Doctorclinicinformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.Doctors" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAEAAAAABEAAgAABAA=</HashCode>
+      <FileName>Doctors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.doctorscientific" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAEAAAAAAAAQAAADBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>doctorscientific.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.Doctrorpersonal" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAIAAggAAAEAAAAAACAACAAAAAAACEAAA=</HashCode>
+      <FileName>Doctrorpersonal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.EMP" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAACAgAAAAA=</HashCode>
+      <FileName>EMP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.EMPClinic" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAAgAAAAAAAAAAAAAACgAAAQAAAAAAAA=</HashCode>
+      <FileName>EMPClinic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.EmpPersonal" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAAAgIAQAEAAAAAAAAACIAAAAAACEAAA=</HashCode>
+      <FileName>EmpPersonal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.extraction" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAEAAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>extraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.gendercs" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAEAAAAAAAAQEAAAAAAgA=</HashCode>
+      <FileName>gendercs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.medicalhistory" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>medicalhistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.medicalhistroryperson" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>medicalhistroryperson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.MyContext" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FIgABACQAQAAAACIAEEUAiAAIAAAgBAAAiFwAAggAAQ=</HashCode>
+      <FileName>MyContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.periodontal" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>periodontal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_dentalbleeching" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAAIEAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>person_dentalbleeching.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_dentalprothesis" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAIAAAAAQAAAAgAACAAAAAAA=</HashCode>
+      <FileName>person_dentalprothesis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_dentalraidiology" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAIEAAAAQAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>person_dentalraidiology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_dentalsurgery" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>person_dentalsurgery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_diagnosis" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAgAAAAAIAAIAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>person_diagnosis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_extraction" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAECAAAgAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>person_extraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_periodontal" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAAAAAAAABAAAAAAAAAQAAAAAAAAABAAAAA=</HashCode>
+      <FileName>person_periodontal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_resroration" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAgAAAAAAAAAQAAAgAAAAAAAAAQA=</HashCode>
+      <FileName>person_resroration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_rootcanal" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>person_rootcanal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_subdentalprothesis" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>person_subdentalprothesis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_subroot" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAEAACAAAAAAAIAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>person_subroot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.person_subsubdentalprothesis" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAIAAAgAQAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>person_subsubdentalprothesis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.personcs" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAACAEgAAAAAAgAQAAiAAIZIEAAAgAAAwgAGAAAA=</HashCode>
+      <FileName>personcs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.Progtam" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Progtam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.resroration" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAAABAAA=</HashCode>
+      <FileName>resroration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.rootcanal" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAABAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rootcanal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.subdentalprothesis" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAgAAAAAAAAAAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>subdentalprothesis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.subroot" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAAAAgAAAAAAAAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>subroot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.subsubdentalprothesis" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAUAAAAAAAAAAAAAgE=</HashCode>
+      <FileName>subsubdentalprothesis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.Migrations.Configuration" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

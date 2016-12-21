@@ -1,0 +1,1436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D868FE79-BC06-4D2F-BF8C-ACFE6FC28447}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DentalClinic</RootNamespace>
+    <AssemblyName>DentalClinic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>teIco.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.2.4.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.2.4.0\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.2.4.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin\Telerik.WinControls.Themes.Office2007Black.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin\Telerik.WinControls.Themes.TelerikMetroTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin\Telerik.WinControls.UI.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="TelerikData, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminprocess\1-4 unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\1-4 unit.Designer.cs">
+      <DependentUpon>1-4 unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\3rdMolar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\3rdMolar.Designer.cs">
+      <DependentUpon>3rdMolar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\5-12 unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\5-12 unit.Designer.cs">
+      <DependentUpon>5-12 unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\adminfirstprocess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\adminfirstprocess.Designer.cs">
+      <DependentUpon>adminfirstprocess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Amulgum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Amulgum.Designer.cs">
+      <DependentUpon>Amulgum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Apecectomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Apecectomy.Designer.cs">
+      <DependentUpon>Apecectomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\apexfixcation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\apexfixcation.Designer.cs">
+      <DependentUpon>apexfixcation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\apexgenesis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\apexgenesis.Designer.cs">
+      <DependentUpon>apexgenesis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\CompleteDenture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\CompleteDenture.Designer.cs">
+      <DependentUpon>CompleteDenture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Compossitte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Compossitte.Designer.cs">
+      <DependentUpon>Compossitte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Dentalbleeching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Dentalbleeching.Designer.cs">
+      <DependentUpon>Dentalbleeching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Dentalimpontology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Dentalimpontology.Designer.cs">
+      <DependentUpon>Dentalimpontology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\DentalProthesis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\DentalProthesis.Designer.cs">
+      <DependentUpon>DentalProthesis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\DentalRaidiology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\DentalRaidiology.Designer.cs">
+      <DependentUpon>DentalRaidiology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\DentalSargery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\DentalSargery.Designer.cs">
+      <DependentUpon>DentalSargery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Diagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Diagnosis.Designer.cs">
+      <DependentUpon>Diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Dycal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Dycal.Designer.cs">
+      <DependentUpon>Dycal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Extrraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Extrraction.Designer.cs">
+      <DependentUpon>Extrraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Fixed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Fixed.Designer.cs">
+      <DependentUpon>Fixed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\FullCoverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\FullCoverage.Designer.cs">
+      <DependentUpon>FullCoverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\GlassIonnemer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\GlassIonnemer.Designer.cs">
+      <DependentUpon>GlassIonnemer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\historyadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\historyadmin.Designer.cs">
+      <DependentUpon>historyadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Milky teeth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Milky teeth.Designer.cs">
+      <DependentUpon>Milky teeth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\multivisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\multivisit.Designer.cs">
+      <DependentUpon>multivisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\PartialCoverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\PartialCoverage.Designer.cs">
+      <DependentUpon>PartialCoverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\PartialDenture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\PartialDenture.Designer.cs">
+      <DependentUpon>PartialDenture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\pediatric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\pediatric.Designer.cs">
+      <DependentUpon>pediatric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\PeriodontalTreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\PeriodontalTreatment.Designer.cs">
+      <DependentUpon>PeriodontalTreatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Permenentteeth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Permenentteeth.Designer.cs">
+      <DependentUpon>Permenentteeth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Pocket Augmentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Pocket Augmentation.Designer.cs">
+      <DependentUpon>Pocket Augmentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\pocket injection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\pocket injection.Designer.cs">
+      <DependentUpon>pocket injection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\polishing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\polishing.Designer.cs">
+      <DependentUpon>polishing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Pulpotomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Pulpotomy.Designer.cs">
+      <DependentUpon>Pulpotomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\pulupectomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\pulupectomy.Designer.cs">
+      <DependentUpon>pulupectomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Rebasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Rebasing.Designer.cs">
+      <DependentUpon>Rebasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Recementation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Recementation.Designer.cs">
+      <DependentUpon>Recementation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\relining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\relining.Designer.cs">
+      <DependentUpon>relining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Removable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Removable.Designer.cs">
+      <DependentUpon>Removable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Repair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Repair.Designer.cs">
+      <DependentUpon>Repair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Retreatment RCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Retreatment RCT.Designer.cs">
+      <DependentUpon>Retreatment RCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\RidgeAgumentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\RidgeAgumentation.Designer.cs">
+      <DependentUpon>RidgeAgumentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Rigid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Rigid.Designer.cs">
+      <DependentUpon>Rigid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\RootCanalTreat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\RootCanalTreat.Designer.cs">
+      <DependentUpon>RootCanalTreat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Rootconaltreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Rootconaltreatment.Designer.cs">
+      <DependentUpon>Rootconaltreatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Rsstoration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Rsstoration.Designer.cs">
+      <DependentUpon>Rsstoration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\sandwich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\sandwich.Designer.cs">
+      <DependentUpon>sandwich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\scaling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\scaling.Designer.cs">
+      <DependentUpon>scaling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\single.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\single.Designer.cs">
+      <DependentUpon>single.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\singlevisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\singlevisit.Designer.cs">
+      <DependentUpon>singlevisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\spacemaintainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\spacemaintainer.Designer.cs">
+      <DependentUpon>spacemaintainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\SurgicalExtraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\SurgicalExtraction.Designer.cs">
+      <DependentUpon>SurgicalExtraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocess\Third Molar Impaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocess\Third Molar Impaction.Designer.cs">
+      <DependentUpon>Third Molar Impaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManager.cs" />
+    <Compile Include="Docmanage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docmanage1.Designer.cs">
+      <DependentUpon>Docmanage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="docmanage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docmanage2.Designer.cs">
+      <DependentUpon>docmanage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docmanage4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docmanage4.Designer.cs">
+      <DependentUpon>Docmanage4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docotrmanage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docotrmanage3.Designer.cs">
+      <DependentUpon>Docotrmanage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docotrs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docotrs.Designer.cs">
+      <DependentUpon>Docotrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocotrsReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocotrsReview.Designer.cs">
+      <DependentUpon>DocotrsReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docselect2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docselect2.Designer.cs">
+      <DependentUpon>Docselect2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctoradd1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctoradd1.Designer.cs">
+      <DependentUpon>Doctoradd1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctoradd2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctoradd2.Designer.cs">
+      <DependentUpon>doctoradd2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctoradd3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctoradd3.Designer.cs">
+      <DependentUpon>doctoradd3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctoradd4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctoradd4.Designer.cs">
+      <DependentUpon>doctoradd4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctorselect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctorselect.Designer.cs">
+      <DependentUpon>Doctorselect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorselect3cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorselect3cs.Designer.cs">
+      <DependentUpon>doctorselect3cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMP.Designer.cs">
+      <DependentUpon>EMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPADD1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPADD1.Designer.cs">
+      <DependentUpon>EMPADD1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPADD2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPADD2.Designer.cs">
+      <DependentUpon>EMPADD2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPADD3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPADD3.Designer.cs">
+      <DependentUpon>EMPADD3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPManage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPManage1.Designer.cs">
+      <DependentUpon>EMPManage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPManage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPManage2.Designer.cs">
+      <DependentUpon>EMPManage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPManage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPManage3.Designer.cs">
+      <DependentUpon>EMPManage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpReview.Designer.cs">
+      <DependentUpon>EmpReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPsearch1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPsearch1.Designer.cs">
+      <DependentUpon>EMPsearch1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPsearch2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPsearch2.Designer.cs">
+      <DependentUpon>EMPsearch2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPsearch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPsearch3.Designer.cs">
+      <DependentUpon>EMPsearch3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flexiable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flexiable.Designer.cs">
+      <DependentUpon>flexiable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDoctor.Designer.cs">
+      <DependentUpon>ManageDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEMP.Designer.cs">
+      <DependentUpon>ManageEMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewEMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEMP.Designer.cs">
+      <DependentUpon>NewEMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patientsadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patientsadd.Designer.cs">
+      <DependentUpon>Patientsadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userprocess\1-4 unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\1-4 unit.Designer.cs">
+      <DependentUpon>1-4 unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\3rdMolar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\3rdMolar.Designer.cs">
+      <DependentUpon>3rdMolar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\5-12 unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\5-12 unit.Designer.cs">
+      <DependentUpon>5-12 unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\adminfirstprocess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\adminfirstprocess.Designer.cs">
+      <DependentUpon>adminfirstprocess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Amulgum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Amulgum.Designer.cs">
+      <DependentUpon>Amulgum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Apecectomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Apecectomy.Designer.cs">
+      <DependentUpon>Apecectomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\apexfixcation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\apexfixcation.Designer.cs">
+      <DependentUpon>apexfixcation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\apexgenesis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\apexgenesis.Designer.cs">
+      <DependentUpon>apexgenesis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\CompleteDenture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\CompleteDenture.Designer.cs">
+      <DependentUpon>CompleteDenture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Compossitte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Compossitte.Designer.cs">
+      <DependentUpon>Compossitte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Dentalbleeching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Dentalbleeching.Designer.cs">
+      <DependentUpon>Dentalbleeching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Dentalimpontology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Dentalimpontology.Designer.cs">
+      <DependentUpon>Dentalimpontology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\DentalProthesis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\DentalProthesis.Designer.cs">
+      <DependentUpon>DentalProthesis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\DentalRaidiology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\DentalRaidiology.Designer.cs">
+      <DependentUpon>DentalRaidiology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\DentalSargery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\DentalSargery.Designer.cs">
+      <DependentUpon>DentalSargery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Diagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Diagnosis.Designer.cs">
+      <DependentUpon>Diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Dycal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Dycal.Designer.cs">
+      <DependentUpon>Dycal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Extrraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Extrraction.Designer.cs">
+      <DependentUpon>Extrraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Fixed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Fixed.Designer.cs">
+      <DependentUpon>Fixed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\FullCoverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\FullCoverage.Designer.cs">
+      <DependentUpon>FullCoverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\GlassIonnemer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\GlassIonnemer.Designer.cs">
+      <DependentUpon>GlassIonnemer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Milky teeth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Milky teeth.Designer.cs">
+      <DependentUpon>Milky teeth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\multivisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\multivisit.Designer.cs">
+      <DependentUpon>multivisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\PartialCoverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\PartialCoverage.Designer.cs">
+      <DependentUpon>PartialCoverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\PartialDenture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\PartialDenture.Designer.cs">
+      <DependentUpon>PartialDenture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\pediatric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\pediatric.Designer.cs">
+      <DependentUpon>pediatric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\PeriodontalTreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\PeriodontalTreatment.Designer.cs">
+      <DependentUpon>PeriodontalTreatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Permenentteeth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Permenentteeth.Designer.cs">
+      <DependentUpon>Permenentteeth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Pocket Augmentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Pocket Augmentation.Designer.cs">
+      <DependentUpon>Pocket Augmentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\pocket injection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\pocket injection.Designer.cs">
+      <DependentUpon>pocket injection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\polishing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\polishing.Designer.cs">
+      <DependentUpon>polishing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Pulpotomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Pulpotomy.Designer.cs">
+      <DependentUpon>Pulpotomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\pulupectomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\pulupectomy.Designer.cs">
+      <DependentUpon>pulupectomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Rebasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Rebasing.Designer.cs">
+      <DependentUpon>Rebasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Recementation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Recementation.Designer.cs">
+      <DependentUpon>Recementation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\relining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\relining.Designer.cs">
+      <DependentUpon>relining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Removable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Removable.Designer.cs">
+      <DependentUpon>Removable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Repair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Repair.Designer.cs">
+      <DependentUpon>Repair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Retreatment RCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Retreatment RCT.Designer.cs">
+      <DependentUpon>Retreatment RCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\RidgeAgumentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\RidgeAgumentation.Designer.cs">
+      <DependentUpon>RidgeAgumentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Rigid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Rigid.Designer.cs">
+      <DependentUpon>Rigid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\RootCanalTreat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\RootCanalTreat.Designer.cs">
+      <DependentUpon>RootCanalTreat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Rootconaltreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Rootconaltreatment.Designer.cs">
+      <DependentUpon>Rootconaltreatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Rsstoration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Rsstoration.Designer.cs">
+      <DependentUpon>Rsstoration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\sandwich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\sandwich.Designer.cs">
+      <DependentUpon>sandwich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\scaling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\scaling.Designer.cs">
+      <DependentUpon>scaling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\single.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\single.Designer.cs">
+      <DependentUpon>single.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\singlevisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\singlevisit.Designer.cs">
+      <DependentUpon>singlevisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\spacemaintainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\spacemaintainer.Designer.cs">
+      <DependentUpon>spacemaintainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\SurgicalExtraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\SurgicalExtraction.Designer.cs">
+      <DependentUpon>SurgicalExtraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userprocess\Third Molar Impaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userprocess\Third Molar Impaction.Designer.cs">
+      <DependentUpon>Third Molar Impaction.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminprocess\1-4 unit.resx">
+      <DependentUpon>1-4 unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\3rdMolar.resx">
+      <DependentUpon>3rdMolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\5-12 unit.resx">
+      <DependentUpon>5-12 unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\adminfirstprocess.resx">
+      <DependentUpon>adminfirstprocess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Amulgum.resx">
+      <DependentUpon>Amulgum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Apecectomy.resx">
+      <DependentUpon>Apecectomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\apexfixcation.resx">
+      <DependentUpon>apexfixcation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\apexgenesis.resx">
+      <DependentUpon>apexgenesis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\CompleteDenture.resx">
+      <DependentUpon>CompleteDenture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Compossitte.resx">
+      <DependentUpon>Compossitte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Dentalbleeching.resx">
+      <DependentUpon>Dentalbleeching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Dentalimpontology.resx">
+      <DependentUpon>Dentalimpontology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\DentalProthesis.resx">
+      <DependentUpon>DentalProthesis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\DentalRaidiology.resx">
+      <DependentUpon>DentalRaidiology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\DentalSargery.resx">
+      <DependentUpon>DentalSargery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Diagnosis.resx">
+      <DependentUpon>Diagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Dycal.resx">
+      <DependentUpon>Dycal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Extrraction.resx">
+      <DependentUpon>Extrraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Fixed.resx">
+      <DependentUpon>Fixed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\FullCoverage.resx">
+      <DependentUpon>FullCoverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\GlassIonnemer.resx">
+      <DependentUpon>GlassIonnemer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\historyadmin.resx">
+      <DependentUpon>historyadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Milky teeth.resx">
+      <DependentUpon>Milky teeth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\multivisit.resx">
+      <DependentUpon>multivisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\PartialCoverage.resx">
+      <DependentUpon>PartialCoverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\PartialDenture.resx">
+      <DependentUpon>PartialDenture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\pediatric.resx">
+      <DependentUpon>pediatric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\PeriodontalTreatment.resx">
+      <DependentUpon>PeriodontalTreatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Permenentteeth.resx">
+      <DependentUpon>Permenentteeth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Pocket Augmentation.resx">
+      <DependentUpon>Pocket Augmentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\pocket injection.resx">
+      <DependentUpon>pocket injection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\polishing.resx">
+      <DependentUpon>polishing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Pulpotomy.resx">
+      <DependentUpon>Pulpotomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\pulupectomy.resx">
+      <DependentUpon>pulupectomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Rebasing.resx">
+      <DependentUpon>Rebasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Recementation.resx">
+      <DependentUpon>Recementation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\relining.resx">
+      <DependentUpon>relining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Removable.resx">
+      <DependentUpon>Removable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Repair.resx">
+      <DependentUpon>Repair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Retreatment RCT.resx">
+      <DependentUpon>Retreatment RCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\RidgeAgumentation.resx">
+      <DependentUpon>RidgeAgumentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Rigid.resx">
+      <DependentUpon>Rigid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\RootCanalTreat.resx">
+      <DependentUpon>RootCanalTreat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Rootconaltreatment.resx">
+      <DependentUpon>Rootconaltreatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Rsstoration.resx">
+      <DependentUpon>Rsstoration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\sandwich.resx">
+      <DependentUpon>sandwich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\scaling.resx">
+      <DependentUpon>scaling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\single.resx">
+      <DependentUpon>single.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\singlevisit.resx">
+      <DependentUpon>singlevisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\spacemaintainer.resx">
+      <DependentUpon>spacemaintainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\SurgicalExtraction.resx">
+      <DependentUpon>SurgicalExtraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocess\Third Molar Impaction.resx">
+      <DependentUpon>Third Molar Impaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docmanage1.resx">
+      <DependentUpon>Docmanage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docmanage2.resx">
+      <DependentUpon>docmanage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docmanage4.resx">
+      <DependentUpon>Docmanage4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docotrmanage3.resx">
+      <DependentUpon>Docotrmanage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docotrs.resx">
+      <DependentUpon>Docotrs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocotrsReview.resx">
+      <DependentUpon>DocotrsReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docselect2.resx">
+      <DependentUpon>Docselect2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctoradd1.resx">
+      <DependentUpon>Doctoradd1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctoradd2.resx">
+      <DependentUpon>doctoradd2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctoradd3.resx">
+      <DependentUpon>doctoradd3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctoradd4.resx">
+      <DependentUpon>doctoradd4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctorselect.resx">
+      <DependentUpon>Doctorselect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorselect3cs.resx">
+      <DependentUpon>doctorselect3cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPADD1.resx">
+      <DependentUpon>EMPADD1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPADD2.resx">
+      <DependentUpon>EMPADD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPADD3.resx">
+      <DependentUpon>EMPADD3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPManage1.resx">
+      <DependentUpon>EMPManage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPManage2.resx">
+      <DependentUpon>EMPManage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPManage3.resx">
+      <DependentUpon>EMPManage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPsearch1.resx">
+      <DependentUpon>EMPsearch1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPsearch2.resx">
+      <DependentUpon>EMPsearch2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPsearch3.resx">
+      <DependentUpon>EMPsearch3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flexiable.resx">
+      <DependentUpon>flexiable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEMP.resx">
+      <DependentUpon>NewEMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patientsadd.resx">
+      <DependentUpon>Patientsadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="userprocess\1-4 unit.resx">
+      <DependentUpon>1-4 unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\3rdMolar.resx">
+      <DependentUpon>3rdMolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\5-12 unit.resx">
+      <DependentUpon>5-12 unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\adminfirstprocess.resx">
+      <DependentUpon>adminfirstprocess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Amulgum.resx">
+      <DependentUpon>Amulgum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Apecectomy.resx">
+      <DependentUpon>Apecectomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\apexfixcation.resx">
+      <DependentUpon>apexfixcation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\apexgenesis.resx">
+      <DependentUpon>apexgenesis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\CompleteDenture.resx">
+      <DependentUpon>CompleteDenture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Compossitte.resx">
+      <DependentUpon>Compossitte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Dentalbleeching.resx">
+      <DependentUpon>Dentalbleeching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Dentalimpontology.resx">
+      <DependentUpon>Dentalimpontology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\DentalProthesis.resx">
+      <DependentUpon>DentalProthesis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\DentalRaidiology.resx">
+      <DependentUpon>DentalRaidiology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\DentalSargery.resx">
+      <DependentUpon>DentalSargery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Diagnosis.resx">
+      <DependentUpon>Diagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Dycal.resx">
+      <DependentUpon>Dycal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Extrraction.resx">
+      <DependentUpon>Extrraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Fixed.resx">
+      <DependentUpon>Fixed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\FullCoverage.resx">
+      <DependentUpon>FullCoverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\GlassIonnemer.resx">
+      <DependentUpon>GlassIonnemer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Milky teeth.resx">
+      <DependentUpon>Milky teeth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\multivisit.resx">
+      <DependentUpon>multivisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\PartialCoverage.resx">
+      <DependentUpon>PartialCoverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\PartialDenture.resx">
+      <DependentUpon>PartialDenture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\pediatric.resx">
+      <DependentUpon>pediatric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\PeriodontalTreatment.resx">
+      <DependentUpon>PeriodontalTreatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Permenentteeth.resx">
+      <DependentUpon>Permenentteeth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Pocket Augmentation.resx">
+      <DependentUpon>Pocket Augmentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\pocket injection.resx">
+      <DependentUpon>pocket injection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\polishing.resx">
+      <DependentUpon>polishing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Pulpotomy.resx">
+      <DependentUpon>Pulpotomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\pulupectomy.resx">
+      <DependentUpon>pulupectomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Rebasing.resx">
+      <DependentUpon>Rebasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Recementation.resx">
+      <DependentUpon>Recementation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\relining.resx">
+      <DependentUpon>relining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Removable.resx">
+      <DependentUpon>Removable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Repair.resx">
+      <DependentUpon>Repair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Retreatment RCT.resx">
+      <DependentUpon>Retreatment RCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\RidgeAgumentation.resx">
+      <DependentUpon>RidgeAgumentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Rigid.resx">
+      <DependentUpon>Rigid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\RootCanalTreat.resx">
+      <DependentUpon>RootCanalTreat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Rootconaltreatment.resx">
+      <DependentUpon>Rootconaltreatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Rsstoration.resx">
+      <DependentUpon>Rsstoration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\sandwich.resx">
+      <DependentUpon>sandwich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\scaling.resx">
+      <DependentUpon>scaling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\single.resx">
+      <DependentUpon>single.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\singlevisit.resx">
+      <DependentUpon>singlevisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\spacemaintainer.resx">
+      <DependentUpon>spacemaintainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\SurgicalExtraction.resx">
+      <DependentUpon>SurgicalExtraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userprocess\Third Molar Impaction.resx">
+      <DependentUpon>Third Molar Impaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c651330d-bd36-4a2d-9bbd-358d279c1f29}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Doctorpic\" />
+    <Folder Include="EMPpic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-button----.png" />
+    <Content Include="Resources\bleeching.png" />
+    <None Include="Resources\bleeching1.png" />
+    <Content Include="Resources\dental prosthesis.png" />
+    <None Include="Resources\dental prosthesis1.png" />
+    <Content Include="Resources\dental radiology.png" />
+    <None Include="Resources\dental radiology1.png" />
+    <None Include="Resources\denture.png" />
+    <Content Include="Resources\diagnosis.png" />
+    <None Include="Resources\diagnosis1.png" />
+    <None Include="Resources\extraction.png" />
+    <Content Include="Resources\implantology.png" />
+    <None Include="Resources\implantology1.png" />
+    <Content Include="Resources\periodontal treatment.png" />
+    <None Include="Resources\periodontal treatment1.png" />
+    <Content Include="Resources\Restoration.png" />
+    <None Include="Resources\Restoration1.png" />
+    <Content Include="Resources\root conal treatment.png" />
+    <None Include="Resources\root conal treatment1.png" />
+    <Content Include="Resources\surgery.png" />
+    <None Include="Resources\surgery1.png" />
+    <None Include="Resources\teeth.png" />
+    <Content Include="teIco.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
