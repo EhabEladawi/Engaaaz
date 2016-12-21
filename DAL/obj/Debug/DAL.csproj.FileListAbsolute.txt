@@ -32,3 +32,13 @@ F:\Dental.clinics\DAL\obj\Debug\DAL.pdb
 H:\Dental.clinics\DAL\bin\Debug\DAL.exe.config
 H:\Dental.clinics\DAL\obj\Debug\DAL.exe
 H:\Dental.clinics\DAL\obj\Debug\DAL.pdb
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\bin\Debug\DAL.exe.config
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\obj\Debug\DAL.exe
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\obj\Debug\DAL.pdb
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\bin\Debug\DAL.exe
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\bin\Debug\DAL.pdb
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\bin\Debug\EntityFramework.dll
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\bin\Debug\EntityFramework.xml
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bahaa\Source\Repos\Engaaaz\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
