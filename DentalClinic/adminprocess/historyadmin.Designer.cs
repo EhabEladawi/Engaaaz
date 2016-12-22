@@ -51,11 +51,15 @@
             // 
             // radCheckedListBox1
             // 
-            this.radCheckedListBox1.Location = new System.Drawing.Point(273, 151);
+            this.radCheckedListBox1.Location = new System.Drawing.Point(273, 164);
             this.radCheckedListBox1.Name = "radCheckedListBox1";
-            this.radCheckedListBox1.Size = new System.Drawing.Size(613, 258);
+            this.radCheckedListBox1.Size = new System.Drawing.Size(217, 245);
             this.radCheckedListBox1.TabIndex = 29;
             this.radCheckedListBox1.Text = "radCheckedListBox1";
+            this.radCheckedListBox1.SelectedItemsChanged += new System.EventHandler(this.radCheckedListBox1_SelectedItemsChanged);
+            this.radCheckedListBox1.SelectedItemChanged += new System.EventHandler(this.radCheckedListBox1_SelectedItemChanged);
+            this.radCheckedListBox1.SelectedIndexChanged += new System.EventHandler(this.radCheckedListBox1_SelectedIndexChanged);
+            this.radCheckedListBox1.Click += new System.EventHandler(this.radCheckedListBox1_Click);
             // 
             // textBox1
             // 
@@ -104,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 595);
+            this.ClientSize = new System.Drawing.Size(526, 595);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -114,6 +118,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "historyadmin";
             this.Text = "Medical History";
+            this.Load += new System.EventHandler(this.historyadmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedListBox1)).EndInit();
             this.ResumeLayout(false);
