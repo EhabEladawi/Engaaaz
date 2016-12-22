@@ -50,6 +50,6 @@ namespace DAL
         public DbSet<EmpPersonal> EmpPersonal { get; set; }
         public DbSet<process> process { get; set; }
 
-
+        public DbSet<medicalhistory> medicalhistory { get; set; }
     }
 }
