@@ -73,7 +73,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 31;
             this.label1.Text = "Name";
             // 
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 595);
+            this.ClientSize = new System.Drawing.Size(526, 434);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -116,7 +116,10 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.radCheckedListBox1);
             this.Controls.Add(this.pictureBox2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "historyadmin";
+            this.Resizable = false;
             this.Text = "Medical History";
             this.Load += new System.EventHandler(this.historyadmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
